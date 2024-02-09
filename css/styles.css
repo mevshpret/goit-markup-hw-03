@@ -31,6 +31,10 @@ p {
   margin-bottom: 0;
 }
 
+img {
+  display: block;
+}
+
 /* ====================== */
 
 .container {
@@ -153,6 +157,9 @@ p {
   display: block;
   margin: 0 auto;
   margin-top: 48px;
+  min-width: 169px;
+  height: 56px;
+  border: none;
 }
 
 .hero-btn:hover,
@@ -176,6 +183,8 @@ p {
   overflow: hidden;
 }
 
+/* ========BENEFITS====== */
+
 .h2 {
 }
 
@@ -185,6 +194,7 @@ p {
 }
 
 .benefits-list-item {
+  width: calc((100% - 72px) / 4);
 }
 
 .benefits-subtitle {
@@ -193,6 +203,7 @@ p {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 
 .benefits-text {
@@ -217,7 +228,7 @@ p {
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 
 .team-list {
@@ -227,10 +238,14 @@ p {
 
 .team-list-item {
   background: #fff;
-  padding-bottom: 32px;
   border-radius: 0 0 4px 4px;
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  width: calc((100% - 48px) / 3);
+}
+
+.team-description-div {
+  padding: 32px 0;
 }
 
 .team-subtitle {
@@ -238,6 +253,8 @@ p {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  text-align: center;
+  margin-bottom: 8px;
 }
 
 .team-text {
@@ -245,6 +262,7 @@ p {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  text-align: center;
 }
 
 /* ====================== */
@@ -260,7 +278,7 @@ p {
   line-height: 0.1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 
 .portfolio-list {
@@ -270,9 +288,13 @@ p {
 }
 
 .portfolio-list-item {
-  border-bottom: 1px solid #e7e9fc;
-  border-left: 1px solid #e7e9fc;
-  border-right: 1px solid #e7e9fc;
+  width: calc((100% - 48px) / 3);
+}
+
+.portfolio-description-div {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
 }
 
 .portfolio-subtitle {
@@ -280,9 +302,7 @@ p {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  padding-top: 32px;
-  padding-bottom: 8px;
-  padding-left: 16px;
+  margin-bottom: 8px;
 }
 
 .portfolio-text {
@@ -290,8 +310,6 @@ p {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  padding-bottom: 32px;
-  padding-left: 16px;
 }
 
 /* ====================== */
@@ -299,8 +317,7 @@ p {
 
 .page-footer {
   background: #2e2f42;
-  padding-top: 100.5px;
-  padding-bottom: 100px;
+  padding: 100px 0;
 }
 
 .logo-white {
@@ -313,7 +330,11 @@ p {
   line-height: 1.5;
   letter-spacing: 0.02em;
   max-width: 264px;
-  margin-top: 16px;
+}
+
+.footer-logo {
+  margin-bottom: 16px;
+  display: inline-block;
 }
 
 /* ====================== */
